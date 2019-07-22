@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff663f"/>
+      <stop offset="1" stop-color="#bc3210"/>
+    </linearGradient>
+  </defs>
+  <path id="exclamation" d="M40,24A16,16,0,1,1,24,8,16,16,0,0,1,40,24ZM24,27.226a2.968,2.968,0,1,0,2.968,2.968A2.968,2.968,0,0,0,24,27.226ZM21.182,16.558l.479,8.774a.774.774,0,0,0,.773.732h3.132a.774.774,0,0,0,.773-.732l.479-8.774a.774.774,0,0,0-.773-.816H21.955a.774.774,0,0,0-.773.816Z" transform="translate(-8 -8)" fill="url(#linear-gradient)"/>
+</svg>

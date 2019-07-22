@@ -1,0 +1,147 @@
+.main {
+   &__mScreen{
+      position: relative;
+      width: 100%;
+      height: calc(100vh - 50px);
+      overflow: hidden;
+      z-index: 10;
+      &::after{
+         content: "";
+         @extend %fullAbsolute;
+         display: block;
+         background:$backMainScreen;
+         z-index: -1;
+      }
+      &_back{
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100vh;
+         z-index: -1;
+      }
+   }
+   &__wrap{
+      @extend %basePos;
+      min-height: 1000px;
+      background: $basicWhite;
+      box-shadow: 0px -3px 6px 0px rgba(0,0,0,.16);
+   }
+   &__topBtn{
+      @extend %absolutePos;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 294px;
+      height: 81px;
+      @include backImg('/img/wave-element-01.svg',cover,center);
+      z-index: 100;
+   }
+   &__text{
+      &_color{
+         &_or{
+            color: $basicOrange;
+         }
+      }
+   }
+   &__description{
+      color: $basicGrey;
+      font-size: (20rem / 16);
+   }
+}
+.caption{
+   &_color{
+      &_wh{
+         color: $basicWhite;
+      }
+      &_bl{
+         color: $basicBlue;
+      }
+      &_bk{
+         color: $basicBlack;
+      }
+   }
+   &_size{
+      &_md{
+         font-size: (28rem / 16);
+         font-weight: 700;
+      }
+      &_lg{
+         font-size: (28rem / 16);
+         text-shadow: 0px 3px 6px rgba(0,0,0,.5);
+      }
+      &_xl{
+         font-size: (56rem / 16);
+         font-weight: 700;
+         text-shadow: 0px 3px 6px rgba(0,0,0,.5);
+      }
+   }
+   &_padding{
+      &_xl{
+         padding:60px 0 0;
+      }
+   }
+}
+.arrowBtn{
+   @extend %baseFlex;
+   @extend %flexFullCenter;
+   width: 60px;
+   height: 60px;
+   border:3px solid $basicWhite;
+   border-radius: 100%;
+   &_next{
+      &::after{
+         content: "";
+         display: block;
+         width: 15.56px;
+         height: 24px;
+         @include backImg('/img/arrow-right.svg',100%,center);
+      }
+   }
+   &_prev{
+      &::after{
+         content: "";
+         display: block;
+         width: 15.56px;
+         height: 24px;
+         @include backImg('/img/arrow-left.svg',100%,center);
+      }
+   }
+}
+.button{
+   @extend %nullLink;
+   color: $basicWhite;
+   &_font{
+      &_xl{
+         font-size: (20rem / 16);
+         text-shadow: 0px 1px 2px rgba(0,0,0,.5);
+      }
+   }
+   &_back{
+      &_bl{
+         background: linear-gradient(180deg, rgba(49, 182, 232, 1), rgba(16, 118, 157, 1) 100%);
+      }
+   }
+   &_padding{
+      &_xl{
+         padding: 20px 41px 16px;
+      }
+   }
+   &_radius{
+      &_tp{
+         border-top-left-radius: 55% 71px;
+         border-top-right-radius: 55% 71px;
+         &:hover{
+            color: rgba(255,255,255,.8);
+         }
+      }
+   }
+}
+.icon{
+   &_size{
+      &_md{
+         width: 24px;
+         height: 24px;
+      }
+   }
+}

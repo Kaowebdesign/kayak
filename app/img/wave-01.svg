@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="44" viewBox="0 0 1920 44">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_64" data-name="Rectangle 64" width="1920" height="44" transform="translate(-3259 -7)" fill="#fff"/>
+    </clipPath>
+    <filter id="Path_26" x="-9" y="-6" width="1938" height="45" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="wave-01" transform="translate(3259 7)" clip-path="url(#clip-path)">
+    <g transform="matrix(1, 0, 0, 1, -3259, -7)" filter="url(#Path_26)">
+      <path id="Path_26-2" data-name="Path 26" d="M0,154v3c68.57,0,68.57,24,137.14,24s68.571-24,137.142-24,68.571,24,137.142,24,68.571-24,137.141-24,68.571,24,137.142,24,68.571-24,137.143-24,68.568,24,137.137,24,68.571-24,137.142-24,68.571,24,137.141,24,68.572-24,137.143-24,68.572,24,137.145,24,68.571-24,137.143-24,68.575,24,137.149,24,68.575-24,137.15-24v-3Z" transform="translate(0 -154)" fill="#10769d"/>
+    </g>
+  </g>
+</svg>
